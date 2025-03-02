@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>question</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white h-screen  text-black container mx-auto">
+
+  <nav class="flex justify-between items-center h-[100px] py-10 m bg-green-500 my-2 rounded-3xl">
+    <div class="flex items-center ml-5 gap-3">
+      <img src="../assets/logo.png" alt="">
+      <h2>Dev <span class="font-bold">Board</span></h2>
+    </div>
+
+    <div>
+      
+      <a href="./index.html"><button id="backToDesk" class="bg-[#3752FD]  text-white p-3 mr-4 rounded-lg">Back to Desk</button></a>
+    </div>
+  </nav>
+  <!-- question section -->
+
+  
+<h1 class="text-center font-bold text-4xl">blog</h1>
+  
+  <div class="px-7 mb-5">
+    <div class="my-5 gap-2  my-4">
+      <h1 class=" font-bold text-lg my-2">
+        Question-1: What are the different ways to select an element in the DOM?
+      </h1>
+      <hr>
+      <p >
+        1. document.getElementById("id") – Selects an element by its unique ID.
+        2. document.getElementsByClassName("class") – Selects all elements with a given class name.
+        3. document.getElementsByTagName("tag") – Selects all elements with a specified tag name.
+        4. document.querySelector("selector") – Selects the first element matching a CSS selector.
+        5.document.querySelectorAll("selector") – Selects all elements matching a CSS selector.
+  
+      </p>
+    </div>
+  
+    <div class="my-5 gap-2">
+      <h1 class=" font-bold text-lg my-2">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+      <hr>
+      <p>
+        1. innerHTML – Returns or sets the HTML content inside an element, including HTML tags.
+  
+        Example: element.innerHTML = "<b>Hello</b>"; (Renders as Hello)
+        2. innerText – Returns or sets only the visible text inside an element, ignoring hidden elements and extra spaces.
+  
+        Example: element.innerText = "Hello"; (Only visible text is shown)
+        3. textContent – Returns or sets all text inside an element, including hidden text, and preserves spaces.
+  
+        Example: element.textContent = "Hello"; (Shows all text, even if hidden by CSS)
+      </p>
+    </div>
+    <div class="my-5 gap-2">
+      <h1 class=" font-bold text-lg my-2">Question-3: What is event delegation in the DOM?</h1>
+      <hr>
+      <p>Event delegation is a technique in the DOM where a parent element handles events for its child elements, even if
+        they are added dynamically. This is done using event bubbling, where events propagate from the target element up
+        to its ancestors.</p>
+    </div>
+    <div class="my-5 gap-2">
+      <h1 class=" font-bold text-lg my-2">Question-4: What is event bubbling in the DOM?</h1>
+      <hr>
+      <p>Event bubbling is a phase in the DOM event propagation process where an event starts from the target element and
+        moves up to its ancestors (parent, grandparent, etc.).</p>
+    </div>
+    <div class="my-5 gap-2">
+      <h1 class=" font-bold text-lg my-2">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+      <hr>
+      <p>1. Use document.createElement("tag") to create a new element
+        2.Append to a parent element:
+        javascript
+        Copy
+        Edit
+        3.Using removeChild() on the parent
+        4.Using element.remove() directly:
+      </p>
+    </div>
+  </div>
+
+
+
+   <script src="../script/script.js"></script>
+   <script src="../script/toogle.js"></script>
+</body>
+</html>
